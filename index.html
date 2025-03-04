@@ -1,32 +1,72 @@
-<!--Home Page page-->
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donation</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshay's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <header>
-      <h1>Welcome</h1>
+        <h1>Akshay Immaraju</h1>
+        <h4>Web and App Developer</h4>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-      
-    </nav>
-
-    <main>
-      
-    </main>
-
+    <img id="face" src="face.jpg" alt="My Face" style="align-self: center;"> 
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a developer, I have a Diploma in Computer Information Systems from Kwantlen Polytechnic University. I have experience developing websites and applications using a multitude of technologies, these include,</p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>MySQL</li>
+            <li>PHP</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>Linux</li>
+            <li>Windows Server 2016</li>
+            <li>Git and Github</li>
+            <li>Text Editors and IDE's: Vim, VSCode, Sublime, Eclipse, Atom</li>
+            <li>Latex</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="p1.png" alt="Project 1 Image">
+            <div class="project-details">
+                <h3>Project 1: Queens Problem</h3>
+                <p>Designed using Java and Processing as a GUI. This project visualizes the queens problem and implements the algorithm to keep all the Queens in a position where they cant attack each other. Application allows you to control the size of the chessboard using the '+' and '-' and number keys '4' to '9'</p>
+                <a href="./project1.zip" download>Download Project 1</a>
+            </div>
+        </div>
+        <div class="project">
+            <img src="p2.png" alt="Project 2 Image">
+            <div class="project-details">
+                <h3>Project 2: Bubble Sort Visualization</h3>
+                <p>This project is programmed using Java and Processing as a GUI. The program visualizes the bubble sort algorithm step by step using the buttons in the application that sort through an array of 25 elements. The application also detects if the array is sorted and outputs the array as a histogram that represents each element by size with respect to other values in the array. </p>
+                <a href="./project2.zip" download>Download Project 2</a>
+            </div>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email:<a href="mailto:akimmaraju22@gmail.com"> akimmaraju22@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/akshay-immaraju-a1a006179?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BhDYmVHKBQFSUnNIJ0s86JQ%3D%3D" target="_blank">linkedin.com/in/akshayimmaraju</a></p>
+        <p>Location: Burnaby, British Colombia CA</p>
+    </section>
     <footer>
-      
+        <p>&copy; 2025 Akshay Immaraju</p>
     </footer>
-    
-  </body>
-
+    <script src="scripts.js"></script>
+</body>
 </html>

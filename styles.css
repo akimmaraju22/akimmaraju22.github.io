@@ -1,0 +1,135 @@
+body,p,h1,h2,h3,h4,h5,h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /*font-family: Arial, sans-serif;*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #312d2b;
+}
+
+header {
+    background-color: #07163d;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: lightgreen;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    color: white;
+    padding: 2rem;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.project img {
+    display: block;
+    margin: 10px 0;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.project-details {
+    flex: 1;
+}
+
+.project-details h3 {
+    margin-top: 0;
+}
+
+.project a {
+    color: rgb(1, 9, 54);
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+.project a:hover {
+    color: lightgreen;
+}
+
+#contact{
+    color: white;
+    text-align: left;
+    width: 100%;
+}
+
+#contact p a {
+    color: rgb(1, 9, 54)
+}
+
+#contact p a:hover {
+    color: lightgreen
+}
+footer {
+    background-color: #07163d;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+#face {
+    display: block;
+    margin: 50px auto 20px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    img {
+        float: left;
+        margin: 25px 0 0 25px;
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+    }
+
+    .project-details {
+        text-align: center;
+    }
+}
