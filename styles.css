@@ -6,6 +6,10 @@ body,p,h1,h2,h3,h4,h5,h6 {
     box-sizing: border-box;
 }
 
+p, li{
+	font-size: 20px;
+}
+
 body {
     /*font-family: Arial, sans-serif;*/
     margin: 0;
@@ -14,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #312d2b;
+    background-color: #000000;
 }
 
 .container {
@@ -22,7 +26,7 @@ body {
 }
 
 header {
-    background-color: #014421;
+    background-color: #333333;
     color: white;
     padding: 1rem;
     text-align: center;
@@ -47,7 +51,7 @@ nav ul li {
 
 nav ul li a:hover {
     text-decoration: underline;
-    color: lightgreen;
+    color: #CCCCCC;
 }
 
 nav ul li a {
@@ -61,7 +65,8 @@ section {
 }
 
 #about {
-	background-color: #2D6A4F;
+	background-color: #999999;
+	color: #333333;
 	border-radius: 50px;
 	margin: 2rem;
 	display: flex;
@@ -87,7 +92,8 @@ section {
 }
 
 .about-c{
-	background-color: #245741;
+	background-color: #666666;
+	color: #cccccc;
 	padding: 50px;
 	margin: 30px;
 	width: 35%;
@@ -98,9 +104,10 @@ section {
     display: flex;
     align-items: center;
     margin: 2rem;
-	background-color: #2D6A4F;
+	background-color: #999999;
 	padding: 50px;
 	border-radius: 50px;
+	color: #333333;
 	
 }
 
@@ -121,34 +128,43 @@ section {
     margin-top: 0;
 }
 
-.project a {
-    color: rgb(1, 9, 54);
-    text-decoration: none;
-    text-decoration: underline;
+.project-button {
+	background-color: #333333;
+	color: #CCCCCC;
+	width: 250px;
+	text-align: center;
+	padding: 15px 32px;
+	border: 5px outset #CCCCCC;
+	border-radius: 25px;
 }
 
-.project a:hover {
-    color: lightgreen;
+.project-button:hover{
+	background-color: #CCCCCC;
+	color: white;
+}
+
+.project a {
+    text-decoration: none;
 }
 
 #contact{
-    color: white;
+    color: #CCCCCC;
     text-align: left;
 	padding: 50px;
-	background-color:#2D6A4F;
+	background-color:#666666;
 	border-radius: 50px;
 	margin: 25px 50px 25px 50px;
 }
 
 #contact p a {
-    color: rgb(1, 9, 54)
+    color: #333333
 }
 
 #contact p a:hover {
-    color: lightgreen
+    color: #CCCCCC;
 }
 footer {
-    background-color: #014421;
+    background-color: #333333;
     color: white;
     text-align: center;
     padding: 1rem;
@@ -173,17 +189,25 @@ footer {
         width: 400px;
         height: 400px;
     }
+	
+	
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
     .project {
         flex-direction: column;
 		justify-content: center;
+		align-items: center;
     }
 
     .project-details {
         text-align: center;
     }
+	
+	.project-button {
+		margin-left: auto;
+		margin-right: auto;
+	}
 	
 	.project img {
 		width: 95%;
@@ -199,5 +223,8 @@ footer {
 	.about-c {
 		width: 100%;
 		margin: 20px auto 20px auto;
+		
 	}
+		
+	
 }
